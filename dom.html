@@ -6,8 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="submit">submit</button>
-    <button type="reset">reset</button>
-    <button type="button">button</button>
+    <button type="button" id="gomb" onclick="Elso()">button</button>
+    <button type="button" id="szam" onclick="Masodik()">button2</button>
+    <button type="button" id="" onclick="Harmadik()">button3</button>
+    
+    <script>
+        function Elso()
+        {
+            document.getElementById("gomb").innerHTML="ez nem egy gemba"
+
+        }
+        function Masodik()
+        {
+            let darab = 0
+            darab ++;
+            document.getElementById("szam").innerHTML=darab;
+        }
+        function Harmadik()
+        {
+
+        }
+    </script>
 </body>
 </html>
