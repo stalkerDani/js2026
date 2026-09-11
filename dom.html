@@ -16,15 +16,15 @@
             document.getElementById("gomb").innerHTML="ez nem egy gemba"
 
         }
+        let darab = 0
         function Masodik()
         {
-            let darab = 0
-            darab ++;
-            document.getElementById("szam").innerHTML=darab;
+            darab ++
+            document.getElementById("szam").innerHTML=darab
         }
         function Harmadik()
         {
-
+            setInterval(Masodik, 1000);
         }
     </script>
 </body>
