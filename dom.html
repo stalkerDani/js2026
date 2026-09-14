@@ -8,8 +8,8 @@
 <body>
     <button type="button" id="gomb" onclick="Elso()">button</button>
     <button type="button" id="szam" onclick="Masodik()">button2</button>
-    <button type="button" id="" onclick="Harmadik()">button3</button>
-    
+    <button type="button" id="auto" onclick="Harmadik()">button3</button>
+    <button type="button" id="stop" onclick="negyedik()">stop</button>
     <script>
         function Elso()
         {
@@ -22,9 +22,22 @@
             darab ++
             document.getElementById("szam").innerHTML=darab
         }
+
+        let SzamlaloFut=false;
+
         function Harmadik()
         {
-            setInterval(Masodik, 1000);
+            document.getElementById("auto")
+            if(SzamlaloFut===false)
+            {
+                SzamlaloFut=setInterval(Masodik, 1000)
+
+            }
+        }       
+        
+        function negyedik()
+        {
+
         }
     </script>
 </body>
