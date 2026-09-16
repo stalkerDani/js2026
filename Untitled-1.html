@@ -10,21 +10,26 @@
     <input type="number" id="Szam2">
     <input type="number" id="Szam3">
 
-    <button type="button" onclick="">Beküldés</button>
+    <button type="button" onclick="Szamol()">Végeredmény megjelenítése</button>
 
     <script>
-        function ElsoSzam()
+        function Szamol()
         {
-            document.getElementById("Szam1")
+            console.log("mukszik");
+            let aOldal = document.getElementById("Szam1").value
+            aOldal = parseInt(aOldal)
+            console.log(aOldal);
+            
+            let bOldal = document.getElementById("Szam2").value
+            bOldal = parseInt(bOldal);
+            console.log(bOldal)
+
+            let cOldal = document.getElementById("Szam3").value
+            cOldal = parseInt(cOldal);
+            console.log(cOldal)
+
         }
-        function HarmadikSzam()
-        {
-            document.getElementById("Szam2")
-        }
-        function MasodikSzam()
-        {
-            document.getElementById("Szam3")
-        }
+        
 </script>
 </body>
 </html>
