@@ -12,10 +12,13 @@
 
     <button type="button" onclick="Szamol()">Végeredmény megjelenítése</button>
 
+    <div id="uzenet">Üzenet</div>
+
     <script>
         function Szamol()
         {
             console.log("mukszik");
+
             let aOldal = document.getElementById("Szam1").value
             aOldal = parseInt(aOldal)
             console.log(aOldal);
@@ -27,9 +30,23 @@
             let cOldal = document.getElementById("Szam3").value
             cOldal = parseInt(cOldal);
             console.log(cOldal)
-
+            
+            if
+            (
+                aOldal + bOldal > cOldal 
+                && aOldal + cOldal > bOldal 
+                && bOldal + cOldal > aOldal
+            )
+                {
+                    console.log("Lehet 3szög")
+                }
+            else
+            {
+            console.log("Nem lehet 3szög")
+            }
+            
+            document.getElementById("uzenet").innerHTML
         }
-        
 </script>
 </body>
 </html>
