@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Párosság</h1>
+    <label for="szam">Kérek egy egész számot</label>
+    <input type="number" name="szam" id="szam">
+    <button type="button" onclick="parossag()">Beküldés</button>
+    <div>
+        <h2>Páratlan</h2>
+        <div id="paratlanok"></div>
+    </div>
+    <div>
+        <h2>Párosok</h2>
+        <div id="parosok"></div>
+    </div>
+
+    <script>
+        function parossag()
+        {
+            let be=document.getElementById("szam");
+            let beSzam=parseInt(be.value);
+
+            if(beSzam%2===0)
+        {
+            document.getElementById("parosok").innerHTML+=beSzam+""
+        }
+        else
+        {
+            document.getElementById("paratlanok").innerHTML+=beSzam+""
+        }
+        
+        }
+    </script>
+</body>
+</html>
