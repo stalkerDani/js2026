@@ -39,13 +39,42 @@
             )
                 {
                     console.log("Lehet 3szög")
+                    document.getElementById("uzenet").innerHTML="Lehet 3szög"
                 }
             else
+                {
+                    console.log("Nem lehet 3szög")
+                    document.getElementById("uzenet").innerHTML="Nem lehet 3szög"
+                }
+            if(cOldal>aOldal && cOldal>bOldal)
             {
-            console.log("Nem lehet 3szög")
-            }
+                if(cOldal*cOldal===aOldal*aOldal+bOldal*bOldal)
+                    console.log("Derék szögű")
+                else
+                    {
+                        console.log("Nem derék szögű")
+                    }
+            } 
             
-            document.getElementById("uzenet").innerHTML
+            if(aOldal>cOldal && aOldal>bOldal)
+            {
+                if(aOldal*aOldal===cOldal*cOldal+bOldal*bOldal)
+                    console.log("Derék szögű")
+                else
+                    {
+                        console.log("Nem derék szögű")
+                    }
+            } 
+            
+            if(bOldal>aOldal && bOldal>cOldal)
+            {
+                if(bOldal*bOldal===aOldal*aOldal+cOldal*cOldal)
+                    console.log("Derék szögű")
+                else
+                    {
+                        console.log("Nem derék szögű")
+                    }
+            } 
         }
 </script>
 </body>
