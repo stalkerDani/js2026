@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Párosság</h1>
+    <h1 class="bg-success text-white text-center p-5 mb-3">Párosság</h1>
     <label for="szam">Kérek egy egész számot</label>
     <input type="number" name="szam" id="szam">
-    <button type="button" onclick="parossag()">Beküldés</button>
+    <button type="button" onclick="parossag()" class="btn btn-warning">Beküldés</button>
     <div>
         <h2>Páratlan</h2>
         <div id="paratlanok"></div>
@@ -25,15 +26,15 @@
             let be=document.getElementById("szam");
             let beSzam=parseInt(be.value);
 
-            if(beSzam%2===0)
-        {
-            document.getElementById("parosok").innerHTML+=beSzam+""
-        }
-        else
-        {
-            document.getElementById("paratlanok").innerHTML+=beSzam+""
-        }
-        
+                if(beSzam%2===0)
+            {
+                document.getElementById("parosok").innerHTML+=beSzam+""
+            }
+            else
+            {
+                document.getElementById("paratlanok").innerHTML+=beSzam+""
+            }
+            
         }
     </script>
 </body>
