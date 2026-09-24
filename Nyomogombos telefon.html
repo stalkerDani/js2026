@@ -13,7 +13,7 @@
            <h1 class=" col-12 bg-success text-white text-center p-5 mb-2">Tárcsázás</h1>
         </header>
     
-        <div class="row ">
+        <div class="row">
             <div class="col-8 container">
                 
         <div class="row ">
@@ -23,23 +23,23 @@
 
             </div>
 
-                <div class="row ">
+                <div class="row">
                     <div class="col-4 border padding py-5 text-center">1</div>
                     <div class="col-4 border padding py-5 text-center">2</div>
                     <div class="col-4 border padding py-5 text-center">3</div>
                 </div>
-                <div class="row ">
+                <div class="row">
                     <div class="col-4 border padding py-5 text-center">4</div>
                     <div class="col-4 border padding py-5 text-center">5</div>
                     <div class="col-4 border padding py-5 text-center">6</div>
                 </div>
-                <div class="row ">
+                <div class="row">
                     <div class="col-4 border padding py-5 text-center">7</div>
                     <div class="col-4 border padding py-5 text-center">8</div>
                     <div class="col-4 border padding py-5 text-center">9</div>
                 </div>
-                <div class="row ">
-                    <div class="col-4"></div>
+                <div class="row">
+                    <div class="col-4 "></div>
                     <div class="col-4 border padding py-5 text-center">0</div>
                 </div>
                 
@@ -51,12 +51,17 @@
     <script>
         function letrehoz1()
         {
-            let b = document.getElementById("biil1");
-            b.innerHTML = '<div class="row"></div>'
+            let b = document.getElementById("bill1");
+            let szöveg = '<div class="row">'
             for (let i=0;i<3;i++)
             {
-                b.innerHTML+=<div class="col-4 border padding py-5 text-center">0</div>
+                szöveg += '<div class="col-4 border padding py-5 text-center">'+(i+1)+'</div>'
+                console.log(i)
             }
+            szöveg+="</div>"
+
+            b.innerHTML=szöveg
+
         }
     </script>
 </body>
