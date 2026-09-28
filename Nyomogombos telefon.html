@@ -41,6 +41,7 @@
                 <div class="row">
                     <div class="col-4 "></div>
                     <div class="col-4 border padding py-5 text-center">0</div>
+                    <div class="col-4 "></div>
                 </div>
                 
             </div>                                                                                                                                
@@ -52,15 +53,19 @@
         function letrehoz1()
         {
             let b = document.getElementById("bill1");
-            let szöveg = '<div class="row">'
-            for (let i=0;i<3;i++)
+            let szöveg="";
+            for(let k=0;k<3;k++)
             {
-                szöveg += '<div class="col-4 border padding py-5 text-center">'+(i+1)+'</div>'
-                console.log(i)
+                szöveg += '<div class="row">'
+                for (let i=0;i<3;i++)
+                {
+                    szöveg += '<div class="col-4 border padding py-5 text-center">'+(i+1+k*3)+'</div>'
+                }
+                szöveg+="</div>"
+                b.innerHTML=szöveg
             }
-            szöveg+="</div>"
+            
 
-            b.innerHTML=szöveg
 
         }
     </script>
