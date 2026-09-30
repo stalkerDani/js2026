@@ -105,9 +105,6 @@
         function letrehozDOM()
         {
            let b=document.getElementById("billDOM");
-           let sor=document.createElement("div");
-           sor.className="row";
-
                 cellakeszit(1);
         }
 
@@ -116,22 +113,23 @@
             let cella=document.createElement("div");
             cella.className="col-4 border py-5 text-center" 
             cella.innerHTML=szam;
+
             return cella
         }
 
         function sorkeszitDOM(szamok)
         {
-            let szoveg='<div class="row">';
+            let sor=document.createElement("div");
+            sor.className="row";
+
                 for(let i=0;i<3;i++)
                 {
-                    szoveg+='<div class="col-4 border py-5 text-center">' + szamok[i] + '</div>'
+                    let cella=cellakeszit(szamok[1])
+                    sor.appendChild(cella)
                 }
-                //return '<div class="row">' +
-                //szamok.map(e=>'<div class="col-4 border py-5 text-center">' + e + '</div>').join("");
-                //+ "</div>";
-                szoveg+="</div>";
+   
 
-                return szoveg;
+                return sor;
         }
 
         
