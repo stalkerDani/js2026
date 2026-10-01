@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body onload="szamiras()">
-    <div id="feladat">
+    <div id="feladat"></div>
+    <div id="feladat2"></div>
+    <div id="feladat3"></div>
+    <div id="feladat4"></div>
 
-    </div>
     <script>
         function szamiras()
         {
             let szamok=document.getElementById("feladat");
             for(let s=0;s<10;s++)
                 {
-                    szamok.innerHTML+=s+" "
+                    szamok.innerHTML+=s+", "
                     
                 }
-
+            let szamok2=document.getElementById("feladat2");
+            for(let m=10;m>=0;m--)
+                {
+                    szamok2.innerHTML+=m+", "
+                }
+            let szamok3=document.getElementById("feladat3");
+            for(let l=0;l<=10;l++)
+                {
+                    szamok3.innerHTML+=l+", "
+                }
+            let szamok4=document.getElementById("feladat4");
+            for(h=0;h<1000;h+=5)
+            {
+                szamok4.innerHTML+=h+"  "
+            }
         }
     </script>
 
