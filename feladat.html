@@ -13,16 +13,25 @@
     <div id="szam4"><h2>4</h2></div>
     <div id="szam5"><h2>5</h2></div>
     <div id="szam6"><h2>6</h2></div>
+    <div id="osszeg"><H3>osszeg</H3></div>
 
 
     <script>
         function szamolas()
         {
-            for(let b=0;b<=100;b++)
+            for(let a=0;a<=100;a++)
             {
-                let maradek=b%7;
-                document.getElementById("szam"+maradek).innerHTML+=b+" ";
+                let maradek=a%7;
+                document.getElementById("szam"+maradek).innerHTML+=a+" ";
                 
+            }
+            
+            let osszeg = 0
+            for(let b=0;b<=9;b++)
+            {
+                osszeg+=b;
+                document.getElementById("osszeg").innerHTML+=osszeg+" "
+
             }
         }
 
