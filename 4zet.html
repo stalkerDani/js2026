@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="4zet"><h1>4zet</h1></label>
+
+    <div style='width:195px; height:195px; border:1px solid black;' id="cacsko"></div><br>
+
+    <input type="number" id="4zet">
+    <button type="button" onclick="valami()">alkotás</button>
+
+    <script>
+        function valami()
+        {
+            let cacsko=document.getElementById("szamok")
+            for(let a=0;a<100;a++)
+            {
+                cacsko.innerHTML+=a;
+                console.log(a)
+            }
+        }
+    </script>
+</body>
+</html>
