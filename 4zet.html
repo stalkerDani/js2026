@@ -8,7 +8,7 @@
 <body>
     <label for="4zet"><h1>4zet</h1></label>
 
-    <div style='width:195px; height:195px; border:1px solid black;' id="cacsko"></div><br>
+    <div style='width:75px; height:50px; background-color: blue; border: 3px solid black;' id="cacsko"></div><br>
 
     <input type="number" id="4zet">
     <button type="button" onclick="valami()">alkotás</button>
@@ -16,13 +16,14 @@
     <script>
         function valami()
         {
-            let cacsko=document.getElementById("szamok")
+            let kocka=document.getElementById("cacsko")
             for(let a=0;a<100;a++)
             {
-                cacsko.innerHTML+=a;
+                kocka.innerHTML+=a+" ";
                 console.log(a)
             }
         }
     </script>
+
 </body>
 </html>

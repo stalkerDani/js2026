@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="szam">
+    <button type="button" id="gomb" onclick="tégla()" >Gomb</button>
+    <div id="kiiras"></div>
+
+    <script>
+        function tégla()
+        {
+            let szam = document.getElementById("szam").value;
+            let kiiras = document.getElementById("kiiras");
+
+            szam = parseInt(szam);
+
+            for(let a = 0; a < szam; a++)
+            {
+                let teglalap = document.createElement("div");
+                teglalap.innerHTML+=szam
+                
+                teglalap.style="width:75px; height:50px; background-color: blue; border: 3px solid black; float: left;"
+                kiiras.style="color:white; text-align: center; "
+
+                kiiras.appendChild(teglalap);
+            }
+        }
+
+    </script>
+
+       
+</body>
+</html>
