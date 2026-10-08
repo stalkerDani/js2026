@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista">
+        
+    </ul>
+    <div id="honapok"></div>
+    <div id="honapok2"></div>
+
+    <script>
+        honap();
+        function honap()
+        {
+            const tomb=["Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"];
+            console.log(tomb);
+            for(let a=0;a<tomb.length;a++)
+                {
+                    console.log(tomb[a])
+                    document.getElementById("honapok").innerHTML=tomb
+                    document.getElementById("honapok2").innerHTML=tomb.join("<br>")
+
+                }
+            for(let a=0;a<tomb.length;a++)
+                {
+                    document.getElementById("lista").innerHTML+="<li>"+tomb[a]+"</li>"
+                }
+        }
+    </script>
+</body>
+</html>
